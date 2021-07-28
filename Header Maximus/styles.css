@@ -246,6 +246,7 @@
     }
     .categories-link > h3{
         color: #01f603!important;
+        font-size: 1rem;
     }
 /*Media Queries*/
 @media (max-width: 1024px){
@@ -281,15 +282,17 @@
 	.c-main-menu__superitem:hover {
 		border-top: 1px solid #ccc
 	}
-    a.categories-link {
+    .categories-link {
         color: #000;
         display: block;
         font-family: Open Sans, sans-serif;
-        font-size: 1.07692rem;
         line-height: 2.92308rem;
         padding: 0 1rem;
         position: relative;
         transition: all .25s ease-in
+    }
+    #categories-link-title{
+        font-size: 1rem;
     }
     a.categories-link {
 		white-space: normal;
