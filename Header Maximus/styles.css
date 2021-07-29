@@ -259,7 +259,16 @@
         font-size: 1rem;
         margin: 0.25rem;
     }
-    
+    .c-main-menu__catlist{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+		margin-bottom: .76923rem;
+		margin-top: 1.15385rem;
+		padding-left: .23077rem;
+		width: 24%;
+		margin-left: 1%
+	}
 /*Media Queries*/
 @media (max-width: 1024px){
     .ofertas-especiales, .main-menu-secundario{
