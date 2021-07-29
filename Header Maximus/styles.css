@@ -19,8 +19,8 @@
 .main-header-superior-end, .busqueda-maximus, .caja-menu-interaccion-usuario,.main-header-superior-logo{
     padding: 0!important;
 }
-.logo-maximus > img{
-    max-width: 100%;
+.logo-maximus > svg{
+    width: 10em;
 }
 .barra-busqueda{
     height: 48px;
@@ -62,6 +62,9 @@
 .svg-menu-barra-inferior{
     width: 1.5em;
 }
+.main-menu-secundario{
+    cursor: pointer;
+}
 .interaccion-usuario-iniciar-sesion, .interaccion-usuario-carrito{
     align-items: center;
 }
@@ -75,15 +78,19 @@
 .navegacion-secundaria > .row{
     align-items: center;
     text-align: center;
-    height: 35px;
+    height: 41px;
+    max-width: 1624px;
+    margin: auto;
 }
+.main-menu-secundario, .main-menu-secundario-barra-categorias{
+    height: 41px;
+} 
 .titulo-central{
     font-size: 0.9rem;
 }
 .main-menu-secundario-barra-categorias{
     align-items: center;
 }
-
 .titulo-home {
     display: inline;
     font-size: 0.9rem;
@@ -101,21 +108,34 @@
     font-weight: 700;
     margin: 0;
     border-radius: 4px 4px 0 0;
+    align-items: center;
 }
+.c-main-menu__wrapper{
+    left: 0;
+    z-index: 1040;
+    position: relative;
+    padding: 0;
+    top: 0;
+    height: 0;
+    display:none;
+}
+
 .c-main-menu__superlist {
     background: #fff;
     list-style-type: none;
-    margin: 0;
     padding: 0;
     position: relative;
     width: 100%;
 }
 .c-main-menu__superlist {
-    max-width: 18.07692rem;
+    max-width: 16.07692rem;
     padding-top: 1rem
 }
-.c-main-menu__superitem > a > h3 > svg {
-    width: 1em;
+.c-main-menu__catlist{
+    list-style-type: none;
+}
+.c-main-menu__superitem > a > h3 > div > svg {
+    width: 1.5em;
 }
 .c-main-menu__superblock {
 	display: none
@@ -141,12 +161,11 @@
     padding-left: 18.07692rem;
     width: 90rem;
     z-index: -1;
-    padding-top: 2.46154rem;
-    padding-bottom: 2rem;
+    margin-top: 3.46154rem;
     margin-bottom: 2rem;
     padding-left: 0;
-    margin-left: 232px;
-    left: 0
+    margin-left: 255px;
+    left: 0;
 }
 .c-main-menu__superitem {
 	position: relative;
@@ -154,7 +173,7 @@
 	padding-bottom: 1px;
 	border-right: 1px solid #ccc;
 	border-left: 4px solid transparent;
-	width: 235px
+	max-width: 100%;
 }
 
 .c-main-menu__superitem.active,
@@ -163,7 +182,7 @@
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	border-right: 1px solid transparent;
-	border-left: 4px solid #000;
+	border-left: 4px solid #01f603;
 	padding-top: 0;
 	padding-bottom: 0
 }
@@ -173,17 +192,6 @@
 .c-main-menu__superitem:hover a,
 .c-main-menu__superitem:hover a:hover {
 	color: #000
-}
-.c-main-menu__superitem:hover .c-main-menu__superblock:before {
-    content: "";
-    background: #fff;
-    height: calc(100% - 44px);
-    position: absolute;
-    left: -234px;
-    width: 18.23077rem;
-    top: 44px;
-    z-index: -1;
-    border-right: 1px solid #ccc
 }
 .c-main-menu__superitem:hover .c-main-menu__superblock:after {
     content: "";
@@ -245,9 +253,13 @@
         text-decoration: none!important;
     }
     .categories-link > h3{
-        color: #01f603!important;
+        color: #01f603;
+        align-items: center;
+        max-width: 100%;
         font-size: 1rem;
+        margin: 0.25rem;
     }
+    
 /*Media Queries*/
 @media (max-width: 1024px){
     .ofertas-especiales, .main-menu-secundario{
@@ -276,7 +288,8 @@
 		margin-bottom: 50px;
 		height: calc(100vh - 50px);
 		overflow: auto;
-		width: 110px
+		width: 110px;
+        margin-top: 2.5vh;
 	}
     .c-main-menu__superitem.active,
 	.c-main-menu__superitem:hover {
@@ -361,6 +374,9 @@
     .caja-menu-interaccion-usuario{
     flex : 0 0 60.666667%!important;
     max-width : 60.666667%!important;
+    }
+    .logo-maximus > svg{
+        width:7em;
     }
 }
 @media (max-width: 320px){
