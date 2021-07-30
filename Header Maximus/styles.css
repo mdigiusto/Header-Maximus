@@ -64,6 +64,8 @@
 }
 .main-menu-secundario{
     cursor: pointer;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 .interaccion-usuario-iniciar-sesion, .interaccion-usuario-carrito{
     align-items: center;
@@ -213,14 +215,20 @@
     right: 0;
     height: 1.23077rem
 }
-.c-main-menu__superitem:hover .c-main-menu__superblock--157,
-	.c-main-menu__superitem:hover .c-main-menu__superblock--271,
-	.c-main-menu__superitem:hover .c-main-menu__superblock--28,
-	.c-main-menu__superitem:hover .c-main-menu__superblock--320,
-	.c-main-menu__superitem:hover .c-main-menu__superblock--3col,
-	.c-main-menu__superitem:hover .c-main-menu__superblock--415 {
+
+	
+	.c-main-menu__superitem:hover .c-main-menu__superblock--3col{
 		width: 70vh;
 	}
+    .c-main-menu__superitem:hover .c-main-menu__superblock--157,
+    .c-main-menu__superitem:hover .c-main-menu__superblock--28,
+    .c-main-menu__superitem:hover .c-main-menu__superblock--271,
+    .c-main-menu__superitem:hover .c-main-menu__superblock--320{
+        width:140vh;
+    }
+    .c-main-menu__superitem:hover .c-main-menu__superblock--415{
+        width: 150vh;
+    }
 	.c-main-menu__superitem:hover .c-main-menu__superblock--157 .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--237 .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--271 .c-main-menu__catlist,
@@ -231,15 +239,17 @@
 		width: 70vh;
 	}
 	.c-main-menu__superitem:hover .c-main-menu__superblock--237 {
-		width: 70vh;
+		width: 140vh;
 	}
 	.c-main-menu__superitem:hover .c-main-menu__superblock--1,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--2col,
-	.c-main-menu__superitem:hover .c-main-menu__superblock--359,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--649,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--943 {
 		width: 70vh;
 	}
+    .c-main-menu__superitem:hover .c-main-menu__superblock--359{
+        width: 140vh;
+    }
 	.c-main-menu__superitem:hover .c-main-menu__superblock--1 .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--2col .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--359 .c-main-menu__catlist,
@@ -247,6 +257,9 @@
 	.c-main-menu__superitem:hover .c-main-menu__superblock--943 .c-main-menu__catlist {
 		width: 70vh;
 	}
+    .c-main-menu__superitem:hover .c-main-menu__superblock--119{
+        width: 140vh;
+    }
 	.c-main-menu__superitem:hover .c-main-menu__superblock--100,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--1col,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--206,
