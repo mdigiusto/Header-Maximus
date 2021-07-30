@@ -119,7 +119,17 @@
     height: 0;
     display:none;
 }
-
+/*.c-main-menu__superitem:hover .c-main-menu__superblock:before {
+    content: "";
+    background: #fff;
+    height: calc(100% - 44px);
+    position: absolute;
+    left: -234px;
+    width: 18.23077rem;
+    top: 44px;
+    z-index: 1;
+    border-right: 1px solid #ccc
+}*/
 .c-main-menu__superlist {
     background: #fff;
     list-style-type: none;
@@ -128,8 +138,10 @@
     width: 100%;
 }
 .c-main-menu__superlist {
-    max-width: 16.07692rem;
-    padding-top: 1rem
+    max-width: 18.07692rem;
+    padding-top: 1rem;
+    width: 18.07692rem;
+    left: -30px;
 }
 .c-main-menu__catlist{
     list-style-type: none;
@@ -155,16 +167,14 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     left: 18.07692rem;
-    max-height: 68.46154rem;
+    height:55rem;
+    max-height: 60rem;
     position: absolute;
-    top: -2.46154rem;
-    padding-left: 18.07692rem;
+    top: -3.46154rem;
     width: 90rem;
     z-index: -1;
     margin-top: 3.46154rem;
-    margin-bottom: 2rem;
-    padding-left: 0;
-    margin-left: 255px;
+    margin-left: 288px;
     left: 0;
 }
 .c-main-menu__superitem {
@@ -209,7 +219,7 @@
 	.c-main-menu__superitem:hover .c-main-menu__superblock--320,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--3col,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--415 {
-		width: 61.53846rem
+		width: 70vh;
 	}
 	.c-main-menu__superitem:hover .c-main-menu__superblock--157 .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--237 .c-main-menu__catlist,
@@ -218,36 +228,36 @@
 	.c-main-menu__superitem:hover .c-main-menu__superblock--320 .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--3col .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--415 .c-main-menu__catlist {
-		width: 32%
+		width: 70vh;
 	}
 	.c-main-menu__superitem:hover .c-main-menu__superblock--237 {
-		width: 66.92308rem
+		width: 70vh;
 	}
 	.c-main-menu__superitem:hover .c-main-menu__superblock--1,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--2col,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--359,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--649,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--943 {
-		width: 36.15385rem
+		width: 70vh;
 	}
 	.c-main-menu__superitem:hover .c-main-menu__superblock--1 .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--2col .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--359 .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--649 .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--943 .c-main-menu__catlist {
-		width: 49%
+		width: 70vh;
 	}
 	.c-main-menu__superitem:hover .c-main-menu__superblock--100,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--1col,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--206,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--78 {
-		width: 21.15385rem
+		width: 70vh;
 	}
 	.c-main-menu__superitem:hover .c-main-menu__superblock--100 .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--1col .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--206 .c-main-menu__catlist,
 	.c-main-menu__superitem:hover .c-main-menu__superblock--78 .c-main-menu__catlist {
-		width: 95%
+		width: 70vh;
 	}
     .categories-link:hover{
         text-decoration: none!important;

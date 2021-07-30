@@ -169,7 +169,7 @@
                                 </ul>
                                 <ul class="c-main-menu__catlist">
                                     <li class="c-main-menu__catname">
-                                        Portátiles
+                                        <b>Portátiles</b>
                                     </li>
                                     <li class="c-main-menu__catitem">
                                         <a class="c-main-menu__catlink mkt-menu-level3" href="https://www.pccomponentes.com/asistente-compra-para-tu-portatil" title="Te ayudamos a elegir portátil">Te ayudamos a elegir portátil
@@ -187,7 +187,7 @@
                                     </li>
                                 </ul>
                                 <ul class="c-main-menu__catlist">
-                                    <li class="c-main-menu__catname">Portátiles por tipo</li>
+                                    <li class="c-main-menu__catname"><b>Portátiles por tipo</b></li>
                                     <li class="c-main-menu__catitem">
                                         <a class="c-main-menu__catlink mkt-menu-level3" href="https://www.pccomponentes.com/portatiles-baratos" title="Portátiles baratos">Portátiles baratos</a>
                                     </li>
@@ -204,7 +204,7 @@
                                 </ul>
                                 <ul class="c-main-menu__catlist">
                                     <li class="c-main-menu__catname">
-                                        Portátiles Por Marca
+                                        <b>Portátiles Por Marca</b>
                                     </li>
                                     <li class="c-main-menu__catitem">
                                         <a class="c-main-menu__catlink mkt-menu-level3" href="https://www.pccomponentes.com/portatil-hp" title="Portátiles HP">Portátiles HP</a>
@@ -235,9 +235,9 @@
                                     </li>
                                 </ul>
                                 <ul class="c-main-menu__catlist">
-                                    <li class="c-main-menu__catname">Accesorios Portátiles</li>
+                                    <li class="c-main-menu__catname"><b>Accesorios Portátiles</b></li>
                                     <li class="c-main-menu__catitem">
-                                        <a class="c-main-menu__catlink mkt-menu-level3" href="https://www.pccomponentes.com/accesorios-portatiles" title="Ver todos los accesorios">Ver todos los accesorios</a>
+                                        <a class="c-main-menu__catlink mkt-menu-level3" href="https://www.pccomponentes.com/accesorios-portatiles" title="Ver todos los accesorios"><b>Ver todos los accesorios</b></a>
                                     </li>
                                 </ul>
                                 <ul class="c-main-menu__catlist">
@@ -253,7 +253,7 @@
                                     </li>
                                 </ul>
                                 <ul class="c-main-menu__catlist">
-                                    <li class="c-main-menu__catname">PC por tipo</li>
+                                    <li class="c-main-menu__catname"><b>PC por tipo</b></li>
                                     <li class="c-main-menu__catitem">
                                         <a class="c-main-menu__catlink mkt-menu-level3" href="https://www.pccomponentes.com/sobremesa/sobremesa-gaming" title="PC gaming">PC gaming</a>
                                     </li>
@@ -277,7 +277,7 @@
                                     </li>
                                 </ul>
                                 <ul class="c-main-menu__catlist">
-                                    <li class="c-main-menu__catname">PC por marca</li>
+                                    <li class="c-main-menu__catname"><b>PC por marca</b></li>
                                     <li class="c-main-menu__catitem">
                                         <a class="c-main-menu__catlink mkt-menu-level3" href="https://www.pccomponentes.com/sobremesa/hp" title="PC HP">PC HP</a>
                                     </li>
@@ -1376,19 +1376,41 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
     <script type="text/javascript">
-        var BtnBarraCategorias = document.getElementById('main-menu-secundario-barra-categorias');
-
-        BtnBarraCategorias.addEventListener('click', function(){
+        
+        document.addEventListener('DOMContentLoaded', function(){
+            var BtnBarraCategorias = document.getElementById('main-menu-secundario-barra-categorias');
+            BtnBarraCategorias.addEventListener('click', function(){
             var BarraCategorias =  document.getElementById('c-main-menu__wrapper');
             $('#c-main-menu__wrapper').toggle(
                 function(){$('body').css({
-                    'background' : 'rgba(0,0,0,0.6)'
-                })},
-                function(){$('body').css({
                     'background' : '#fff'
                 })}
+                
                 );
-        })
+                if (BarraCategorias.style.display == 'block'){
+                    $('body').css({
+                    'opacity' : '1',
+                    'transition' : 'opacity .3s',
+                    'background-color' : 'rgba(0,0,0,.6)',    
+                    });
+                    $('nav').css({
+                    'background-color' : '#fff'
+                    });
+                }    
+            });
+            
+        });
+        
+/*
+background-color: rgba(0,0,0,.6);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    transition: opacity .3s;
+    position: fixed;
 
+*/
     </script>
 </html>
