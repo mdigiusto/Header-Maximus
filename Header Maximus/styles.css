@@ -296,6 +296,9 @@
 		width: 24%;
 		margin-left: 1%
 	}
+    .c_link_top{
+        color: #01f603;
+    }
 /*Media Queries*/
 @media (max-width: 1024px){
     .ofertas-especiales, .main-menu-secundario{
