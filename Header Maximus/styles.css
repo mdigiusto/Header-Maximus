@@ -70,6 +70,7 @@
     cursor: pointer;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    display: none;
 }
 .interaccion-usuario-iniciar-sesion, .interaccion-usuario-carrito{
     align-items: center;
@@ -123,7 +124,6 @@
     padding: 0;
     top: 0;
     height: 0;
-    display:none;
 }
 .c-main-menu__superlist {
     background: #fff;
