@@ -134,7 +134,7 @@
 }
 .c-main-menu__superlist {
     max-width: 18.07692rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     width: 18.07692rem;
     left: -30px;
 }
@@ -298,6 +298,23 @@
 	}
     .c_link_top{
         color: #01f603;
+    }
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030!important;
+        background-color: #000;
+    }
+    .svg-cruz{
+        width: 9.5em!important;
+        cursor: pointer;
+    }
+    .Btn-dos{
+        margin-top: 2%;
+        padding-right: 0!important;
     }
 /*Media Queries*/
 @media (max-width: 1024px){

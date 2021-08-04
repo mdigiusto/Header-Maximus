@@ -62,25 +62,14 @@
     </header>
     <div class="navegacion-secundaria container-fluid">
         <div class="row">
-            <div class="Btn-Barra-Categorias col-2 col-md-2" id="Btn-Barra-Categorias"  type="button">
-                <div class="main-menu-secundario-barra-categorias row" data-toggle="modal" data-target="#main-menu-secundario-barra-categorias">
-                    <h3 class="col-12 menu-name row">
-                        <svg class="svg-menu col-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
-                            <defs/>
-                            <path d="M0 277.3h384V320H0zM0 170.7h384v42.7H0zM0 64h384v42.7H0z"/>
-                        </svg>
-                        <span class="col-9"><b>Todas las Categorias</b></span>
-                    </h3>
-                </div>
-            </div>
             <nav class="main-menu-secundario col-2 col-md-2 modal">
-                <div class="main-menu-secundario-barra-categorias row" id="main-menu-secundario-barra-categorias"  type="button">
-                    <h3 class="col-12 menu-name row">
-                        <svg class="svg-menu col-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 329 329">
+                <div class="main-menu-secundario-barra-categorias-cerrar row" data-dismiss="modal" id="main-menu-secundario-barra-categorias-cerrar">
+                    <h3 class="col-12 menu-name Btn-dos row" data-dismiss="modal">
+                        <svg class="svg-cruz col-3" data-dismiss="modal" id="svg-cruz" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 329 329">
                             <defs/>
                             <path d="M195 165L323 37a21 21 0 10-30-31L165 135 36 6A21 21 0 106 37l128 128L6 293a21 21 0 1030 30l129-128 128 128a21 21 0 0030 0c8-8 8-22 0-30zm0 0"/>
                         </svg>
-                        <span class="col-9"><b>Todas las Categorias</b></span>
+                        <span data-dismiss="modal" class="col-9"><b>Todas las Categorias</b></span>
                     </h3>
                 </div>
                 <div class="c-main-menu__wrapper container-fluid" id="c-main-menu__wrapper">
@@ -3223,6 +3212,17 @@
                     </ul>
                 </div>
             </nav>
+            <div class="Btn-Barra-Categorias col-2 col-md-2" id="Btn-Barra-Categorias"  type="button">
+                <div class="main-menu-secundario-barra-categorias row" data-toggle="modal" data-target="#main-menu-secundario-barra-categorias-cerrar">
+                    <h3 class="col-12 menu-name row">
+                        <svg class="svg-menu col-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 384">
+                            <defs/>
+                            <path d="M0 277.3h384V320H0zM0 170.7h384v42.7H0zM0 64h384v42.7H0z"/>
+                        </svg>
+                        <span class="col-9"><b>Todas las Categorias</b></span>
+                    </h3>
+                </div>
+            </div>
             <div class="titulo-central col-7 col-md-7 col-xs-12 col-sm-12">
                 Tu
                 <h1 class="titulo-home">Tienda de Tecnologia Online</h1>
@@ -3242,11 +3242,9 @@
         document.addEventListener('DOMContentLoaded', function(){
             const BtnBarraCategorias = document.getElementById('Btn-Barra-Categorias');
             BtnBarraCategorias.addEventListener('click', function(){
-                $('.main-menu-secundario').css({
-                    'z-index' : '9999'
-                }),
-                $('.modal-backdrop').css({
-                    'z-index':'1',
+                $('#main-menu-secundario-barra-categorias-cerrar').css({
+                    'z-index' : '1200',
+                    'background' : '#ffffff',
                 }),
                 $('#Btn-Barra-Categorias').css({
                     'display' : 'none',
@@ -3254,7 +3252,16 @@
                 $('.main-menu-secundario').css({
                     'display' : 'contents',
                 })
-            })
+            });
+            const BtnCerrarCategorias = document.getElementById('main-menu-secundario-barra-categorias-cerrar');
+            BtnCerrarCategorias.addEventListener('click', function(){
+                $('#Btn-Barra-Categorias').css({
+                    'display' : 'block',
+                }),
+                $('.main-menu-secundario').css({
+                    'display' : 'none',
+                })
+            });
         });
     </script>
 </html>
