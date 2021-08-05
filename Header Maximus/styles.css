@@ -316,6 +316,9 @@
         margin-top: 2%;
         padding-right: 0!important;
     }
+    .Btn-Barra-Categorias{
+        cursor: pointer;
+    }
 /*Media Queries*/
 @media (max-width: 1024px){
     .ofertas-especiales, .main-menu-secundario{
